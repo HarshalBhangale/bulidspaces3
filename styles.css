@@ -40,7 +40,13 @@ body {
     margin: 2rem auto;
     padding: 1rem;
   }
-  
+  .img {
+  width: 10px; /* Adjust the width as needed */
+  height: 10px; /* Adjust the height as needed */
+  margin-right: 0.5rem;
+  object-fit: contain; /* This property ensures the image maintains its aspect ratio */
+}
+
   /* Dashboard styles */
   .dashboard-card {
     background-color: white;
