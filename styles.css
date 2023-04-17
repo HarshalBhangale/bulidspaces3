@@ -1,0 +1,134 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #f1f1f1;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  /* Dashboard styles */
+  .dashboard-card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(33% - 2rem);
+    transition: 0.3s;
+  }
+  
+  .dashboard-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .dashboard-card h2 {
+    margin-top: 0;
+    color: #4CAF50;
+  }
+  
+  .dashboard-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Create Post styles */
+  .create-post-form label,
+  .create-post-form textarea,
+  .create-post-form button,
+  .create-post-form select,
+  .create-post-form input[type="text"],
+  .create-post-form input[type="file"] {
+    margin-bottom: 1rem;
+  }
+  
+  .create-post-form input[type="text"],
+  .create-post-form textarea,
+  .create-post-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-post-form button[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+  
+  .create-post-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Analytics styles */
+  .analytics-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .analytics-chart {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+    transition: 0.3s;
+  }
+  
+  .analytics-chart:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .analytics-chart h2 {
+    margin-top: 0;
+    color: #4CAF50;
+  }
+  
