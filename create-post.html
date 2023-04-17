@@ -4,62 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>SubSocial: Shipping @ S3</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+  <title>Create Post - Social Media Management</title>
 </head>
 <body>
   <header>
-    <h1>Analytics</h1>
+    <h1>Create Post</h1>
     <nav>
       <a href="index.html">Dashboard</a>
-      <a href="create-post.html">Create Post</a>
+      <a href="analytics.html">Analytics</a>
     </nav>
   </header>
 
   <main>
-    <section class="analytics-section">
-      <h2>Overall Engagement</h2>
-      <div class="analytics-chart">
-        <!-- Overall Engagement Chart -->
-        <div class="analytics-chart">
-        <canvas id="engagementChart"></canvas>
-        </div>
+    <form class="create-post-form">
+      <label for="platform">Platform:</label>
+      <select id="platform" name="platform">
+        <option value="twitter">Twitter</option>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="linkedin">LinkedIn</option>
+      </select>
 
-        <!-- Insert a chart for overall engagement using a JavaScript library like Chart.js or D3.js -->
-      </div>
-    </section>
-  
-    <section class="analytics-section">
-      <h2>Top Posts</h2>
-      <div class="analytics-chart">
-        <!-- Insert a chart for top posts using a JavaScript library like Chart.js or D3.js -->
-        <div class="analytics-chart">
-            <canvas id="topPostsChart"></canvas>
-          </div>
-    </div>
-    </section>
-  
-    <section class="analytics-section">
-      <h2>New Followers</h2>
-      <div class="analytics-chart">
-        <div class="analytics-chart">
-            <canvas id="newFollowersChart"></canvas>
-          </div>
-        <!-- Insert a chart for new followers using a JavaScript library like Chart.js or D3.js -->
-      </div>
-    </section>
-  
-    <section class="analytics-section">
-      <h2>Platform Comparison</h2>
-      <div class="analytics-chart">
-        <div class="analytics-chart">
-            <canvas id="platformComparisonChart"></canvas>
-          </div>
-        <!-- Insert a chart for platform comparison using a JavaScript library like Chart.js or D3.js -->
-      </div>
-    </section>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title">
+
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" rows="4" cols="50"></textarea>
+
+      <label for="media">Media:</label>
+      <input type="file" id="media" name="media">
+
+      <button type="submit">Submit</button>
+    </form>
   </main>
-  </body>
-  </html>
-  
+</body>
+</html>
